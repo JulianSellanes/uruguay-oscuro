@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overscroll-behavior: none;
+    text-decoration: none;
+    list-style: none;
+    line-height: 1.5;
+    font-family: Arial;
+}
+
+:root {
+    --white: white;
+    --black: black;
+    --grey: rgb(111, 111, 111);
+    --bg: rgb(244, 244, 244);
+    --accent: #007bff;
+    --accent-light: #2f94ff;
+    --accent-dark: #006bdd;
+}
+
+html {
+    box-sizing: inherit;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    background-color: var(--bg);
+    color: var(--black);
+}
+
+/* Phones */
+
+main {
+    width: 100vw;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+section {
+    /* width: clamp(300px, 90vw, 768px); */
+    width: 90%;
+    max-width: 768px;
+    /* padding: clamp(0.5rem, 2vw, 5rem); */
+    padding: 2rem 0.5rem;
+    margin: 1rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 2rem;
+
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-size: clamp(3rem, 9vw, 6rem);
+    /* font-size: clamp(3rem, 5.1vw, 3.4rem); */
+}
+
+h3 {
+    /* font-size: clamp(1.7rem, 4vw, 3rem); */
+    font-size: clamp(1.7rem, 5vw, 3.4rem);
+}
+
+p {
+    /* font-size: 1.4rem; */
+    font-size: clamp(1.4rem, 3.3vw, 2.1rem);
+}
+
+.secret {
+    font-size: 0.8rem;
+}
+
+/* Small tablets */
+
+@media screen and (min-width: 480px) {
+    section {
+        padding: 2.5rem 1rem;
+    }
+}
+
+/* Large tablets */
+
+@media screen and (min-width: 768px) {
+    section {
+        /* background-color: red; */
+        padding: 3rem 2rem;
+    }
+}
+
+/* Laptops */
+
+@media screen and (min-width: 1024px) {
+    section {
+        /* background-color: yellow; */
+        padding: 3.5rem 4rem;
+        margin: 2rem;
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1200px) {
+
+}
